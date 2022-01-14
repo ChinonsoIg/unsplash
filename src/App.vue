@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Unsplash app built with Vue"/>
+    <Nav />
+    <LandingPage msg="Welcome to Unsplash app built with Vue"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LandingPage from './components/LandingPage.vue';
+import Nav from "./components/Nav.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    LandingPage
   }
 }
 </script>
@@ -23,6 +25,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+
+  /* margin: 0 auto; */
+  /* border: 2px solid red; */
 }
 </style>
