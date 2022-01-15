@@ -1,32 +1,43 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>    
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'LandingPage',
-  props: {
-    msg: String
-  }
+  // props: {
+  //   msg: String
+  // }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.grid-container {
+  position: relative;
+  top: -40px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 50px;
+  max-width: 800px;
+  /* border: 1px solid red; */
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.grid-item {
+  background-color: teal;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
 }
 </style>

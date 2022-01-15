@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <div id="nav">
     <input 
       v-model="search"
       placeholder="Search for photo"
@@ -18,8 +18,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.nav {
-  height: 150px;
+#nav {
+  height: 180px;
   display: grid;
   place-items: center;
   background-color: rgba(0, 128, 128, 0.1);
