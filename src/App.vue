@@ -7,7 +7,7 @@
 
 <script>
 import LandingPage from './components/LandingPage.vue';
-import Nav from "./components/Nav.vue";
+import Nav from "./components/Header.vue";
 
 export default {
   name: 'App',
